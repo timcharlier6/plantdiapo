@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plant Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, orientation=landscape">
+    <title>Plants in Humanity</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .card {
@@ -207,5 +207,10 @@
         </div>
       </div>
     </div>
+    <script>
+      if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('landscape'); 
+      }
+    </script>
   </body>
 </html>
