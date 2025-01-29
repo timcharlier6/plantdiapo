@@ -17,8 +17,10 @@
         box-sizing: border-box;
       }
       body {
+        min-width: 100vw;
+        min-height: 100vh;
         background-image: radial-gradient(
-          circle 150px at 25% 33%,
+          circle 150px at 10% 13%,
           white,
           yellow,
           lightyellow,
@@ -69,11 +71,11 @@
   </head>
 
   <body
-    class="lg:flex lg:items-center lg:justify-center"
+    class="h-full w-full lg:flex lg:items-center lg:justify-center"
   >
     <div
       id="card-container"
-      class="w-full flex flex-col lg:flex-row overflow-x-scroll space-y-6 lg:space-y-0 lg:space-x-6 p-6 text-center"
+      class="w-full h-full flex flex-col items-center justify-center lg:flex-row overflow-x-scroll space-y-6 lg:space-y-0 lg:space-x-6 p-6 text-center"
     >
     <script>
       $(document).ready(function () {
